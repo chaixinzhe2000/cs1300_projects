@@ -1,118 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to UIUX Hosting</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Personas & Storyboarding</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-<body>
-	<div class="heading">Project 1: Personas & Storyboarding</div>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-	<div class="heading">Part I: Preparation</div>
-	<div class="subheading">1) Select an accessible interface in public</div>
-	<div class="text">
-		Ever since I received my driver’s license last year, the gas station is a place I’d frequent from time to time.
-		Although there are many different gas station chains (Shell, bp, Stop & Shop, Mobil, etc.), I observed that the
-		interface of the gas pump in those different gas stations is mostly the same, and I remembered that adding gas
-		wasn’t the most intuitive experience for first-timers. That’s why I decided to choose the gas pump interface as my
-		public interface to study.
-	</div>
-	<div class="subheading">2) Making a sketch of the gas pump interface</div>
-	<div class="text">
-		<b>Sketch of a common gas pump interface</b></br>
-		Purpose: handle payment, enable fuel grade selection, and display price information to the user
-		<img src="sketch.png" width="400">
-		<div>
-			<b>A</b>: Information panel, displaying price and storage metrics</br>
-			<b>B</b>: Touch-sensitive button, allowing users to control the display</br>
-			<b>C</b>: Credit card reader, reading credit card information</br>
-			<b>D</b>: PIN pad, handling number inputs</br>
-			<b>E</b>: LCD display, displaying per gallon price for each fuel grade</br>
-			<b>F</b>: Fuel grade button, allowing users to choose fuel grade</br>
-		</div>
-	</div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-	<div class="heading">Part II: Recording Observations</div>
-	<div class="subheading">1) Key Observations</div>
-	<div class="text">
-		Overall, most users could use the gas pump interface to add fuel to their vehicle. These are some of the key
-		characteristics I observed:
-		<ul>
-			<li>Half of the user initiates the transaction by directly inserting their credit card, while the other half uses
-				the LED screen to initiate transactions</li>
-			<li>There is no clear way to terminate the transaction, and one user had to go to another pump to continue the
-				transaction</li>
-			<li>The interface requires users to look down to select the fuel grade, and the user often hesitates on which fuel
-				to choose as they are cautious not to choose the wrong grade</li>
-			<li>Very few users would wait to receive the paper receipt</li>
-			<li>The button on the side of the LED screen does not produce any touch response, and sometimes the user would
-				click
-				the button multiple times</li>
-			<li>During fueling, users usually put their attention to Part A in the sketch, to track the current price and
-				volume
-			</li>
-		</ul>
-		<div class="subheading">2) User Research Questions</div>
-		<ol>
-			<li>Do you feel that the gas pump interface was easy-to-use, and the affordance of the side buttons is natural?
-			</li>
-			<li>How would you rate your experience on a scale of 1 (worst) to 10 (best)?</li>
-			<li>Where does your attention stay when you are fueling?</li>
-			<li>How often do you go to the gas station?</li>
-			<li>If you have been to different gas stations, do you think there is a learning curve between different pumps?
-			</li>
-			<li>Is there any new feature you would like to see on a new gas pump?</li>
-			<li>Have you encountered any difficulties during the fueling process?</li>
-			<li>Are you happy with the physical feedback of your commands on buttons and/or fuel-grade selectors?</li>
-			<li>Is there anything else you would like to add?</li>
-		</ol>
-		<div class="subheading">3) Summarized Responses</div>
-		<ul>
-			<li>Users generally feel the pump is easy-to-use, but the experience does have room for improvement - on a scale
-				of
-				1-10, users surveyed gave an average rating of 7.2.</li>
-			<li>43% of the users had previous experience pressing the wrong button on the gas pump and were unable to cancel
-				the
-				transaction</li>
-			<li>Most people reported that there is no learning curve between gas pumps of different brands</li>
-			<li>Users were not satisfied with the control feedback of the side buttons - there was a short beep after each
-				touch, but there was no physical feedback. Hearing-impaired users might receive no feedback at all.</li>
-			<li>Almost all users focus on the price LCD display (Part A) during the fuelling process</li>
-		</ul>
-	</div>
-	<div class="heading">Part III: Personas</div>
-	<img src="alex.png" width="550" style="margin-bottom: 0">
-	<div class="text"><b>“Geeky” Alex</b> is a student who commutes in his car. He depends on financial support from his
-		parents and he embraces all kinds of new technologies.
-
-		Right now, his main concern is that the interface is irresponsive and the gas pump does not accept touchless
-		payment. Since the gas station I visited is near Brown University, there are a lot of students who use their
-		service.</div>
-
-	<img src="susan.png" width="550" style="margin-bottom: 0">
-	<div class="text"><b>“Thoughtful” Susan</b> is a married mother with 2 kids. She cares a lot about hygiene and she is
-		always thinking about her family. She doesn’t mind paying extra for better gas, but she is rather impatient to wait
-		to fuel up the big tank in her F-150.
-
-		Right now, her concern is that interface does not provide too much security and the gas pump does not provide an
-		estimate of the overall progress of fueling. I have encountered many middle-aged users who drive big cars, and they
-		usually bring their families around in the car.
-	</div>
-
-	<div class="heading">Part IV: Storyboard</div>
-
-	<div class="text">I decided to go with “geeky” Alex for my storyboard.</div>
-	<img src="one.png" width="900" style="margin: 0">
-	<img src="two.png" width="900" style="margin: 0">
-	<img src="three.png" width="900" style="margin: 0">
-
-
-
-
-</body>
-
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
