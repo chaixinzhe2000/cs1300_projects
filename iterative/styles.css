@@ -23,10 +23,8 @@ h2 {
 	margin-bottom: 0%;
 }
 
-h1 a:link,
-a:visited {
-	text-decoration: none;
-	color: var(--background-light);
+h1 a:link {
+	color: var(--accent);
 }
 
 h3,
@@ -44,12 +42,6 @@ body {
 
 p {
 	line-height: 20px;
-}
-
-a:link,
-a:hover {
-	text-decoration: underline;
-	color: var(--accent);
 }
 
 li {
@@ -71,12 +63,6 @@ li {
 
 .menu-item a:hover {
 	color: var(--accent);
-}
-
-.menu-item a:link,
-a:visited {
-	text-decoration: none;
-	color: inherit;
 }
 
 .nav-bar {
@@ -138,12 +124,6 @@ a:visited {
 	color: var(--dark-green);
 }
 
-.project1 a:link,
-a:visited {
-	text-decoration: none;
-	color: inherit;
-}
-
 .suggestion {
 	margin: 0;
 }
@@ -155,4 +135,17 @@ a:visited {
 
 .sketches {
 	width: 100%;
+	margin-top: 10px;
+}
+
+.videolink {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--accent);
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--accent);
 }

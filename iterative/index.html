@@ -16,18 +16,22 @@
 	<div class="project1">
 		<div class="header">
 			<h1>
-				<a href="../iterative/index.html">CSCI 1300 UI/UX Portfolio</a>
+				<a style="color:white" href="../iterative/index.html">CSCI 1300 UI/UX Portfolio</a>
 			</h1>
 		</div>
 		<div class="nav-bar">
 			<h2 style="text-align: center; text-decoration: underline; margin-bottom: 10px;">
 				Project 3: Iterative Design for Kopa</h2>
 			<div class="menu-item" style="text-align: center;">
-				<a href="#intro">INTRODUCTION</a>
+				<a href="#intro">CONTEXT</a>
 				•&nbsp;
-				<a href="#personas">BUILDING PERSONAS</a>
+				<a href="#lowfi">LOW-FI SKETCHES</a>
 				•&nbsp;
-				<a href="#storyboarding">STORYBOARDING</a>
+				<a href="#hifi">HIGH-FI MOCK UP</a>
+				•&nbsp;
+				<a href="#annotation">WHAT WE CHANGED</a>
+				•&nbsp;
+				<a href="#usertesting">USER TESTING</a>
 			</div>
 		</div>
 		<div class="content-grid" id="intro">
@@ -54,28 +58,37 @@
 					their idea for the pages on a blank canvas. Here is what we got:
 				</p>
 				<img class="sketches" src="./signup.png" />
-				<p>
-					Our favourite quote from the company founder and CEO is: “We believe that exploration and community make
-					people whole. Kopa exists to inspire people to get out of their comfort zones, to form lasting relationships,
-					and to live more fulfilled lives.”
-				</p>
+				<img class="sketches" src="./browserental.png" />
+				<img class="sketches" src="./findroommate.png" />
 			</div>
 		</div>
-		<div class="content-grid" id="personas">
+		<div class="content-grid" id="lowfifinal">
+			<h2>Finalized Low-fi Wireframe</h2>
+			<p style="margin-bottom: 0;">
+				After the initial individual sketching, we put our sketches together and brainstormed the best layout. We made
+				our low-fi sketches into wireframes to guide our high-fidelity design process.
+			</p>
+			<img class="sketches" src="./lowfifinalized.png" />
+		</div>
+		<div class="content-grid" id="hifi">
 			<div>
 				<h2>Interactive Hi-Fi Mockup Critique</h2>
 				<p>
 					During our critique session, we had the opportunity to receive feedback from not only fellow peers but also an
 					industry expert, Gifford Cheung, who is a Sr. UX Researcher @Nintendo (and ex-classmate of Jeff!). Here are
-					highlights of the feedback received, and how we addressed them:
+					the original high-fidelity mock up, highlights of the feedback received, and how we addressed them:
 				</p>
+				<h4>High-fidelity Mock Up</h4>
+				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+					src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIj4khB3jnSR3dyKooob8Ew%2FIterative-Design-Hi-Fi%3Fnode-id%3D0%253A1%26t%3DYtRypmPyag1hTobZ-1"
+					allowfullscreen></iframe>
 				<h4>General Feedback</h4>
 				<p>
 					Reviewers generally liked our UI (e.g. color palette) and design hierarchy for the 3 pages (sign-up, browse
 					rentals, find roommates). Particularly, they thought the layouts of the sign-up and find roommates pages were
 					fun and innovative.
 				</p>
-				<h4>Finding Roommates</h4>
+				<h4>Find Roommates Page</h4>
 				<div class="column-list">
 					<div class="column">
 						<p class="suggestion">
@@ -99,7 +112,7 @@
 					</div>
 				</div>
 
-				<h4>Browsing Rentals</h4>
+				<h4>Browse Rentals Page</h4>
 				<div class="column-list">
 					<div class="column">
 						<p class="suggestion">
@@ -121,70 +134,112 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-grid" id="storyboarding">
-			<div style="margin-bottom: 20pt;">
-				<h2>USER TESTING</h2>
-				<!-- <h4>A Walkthrough of Jamie's Boba Ordering Experience</h4> -->
-				<!-- <img class="image" src="media/storyboard.png" alt="storymap"> -->
-				<p>We gave users the following scenario, which we thought would encapsulate Kopa’s typical persona and user motivation:
-					<ul> 
-						<li> Imagine you are a college student who has an internship in NYC this upcoming summer. </li>
-						<li> You want to compare short-term rentals within your price range. </li>
-						<li> You also want to find quiet, outdoorsy roommates you can share your lease with. </li>
-					</ul>
-					We also made sure to let users know that this is not an actual website but an interactive mockup made on prototyping software, so not all button functions are built out.
-				</p>
-				<h4>Tasks & Results:</h4>
+		<div class="content-grid" id="annotation">
+			<div>
+				<h2>Annotated Changes After Critique</h2>
 				<p>
-					We gave users 3 tasks, which we thought would encapsulate the 3 key functionalities and screens of our website. Each task was assessed according to the following 2 metrics, “Success” (Yes or No) and “Difficulty” (Very difficult to Very easy, with a 5-point rating scale)
+					After collecting different opinions and hearing about our classmates' suggestions, we made changes to our
+					high-fidelity mock up to incorporate these great ideas. Here is an annotated version of our high-fidelity mock
+					up.
 				</p>
-				<p> 
-					<u>Task 1: Sign up as a renter.</u> (Sign Up Page)
-						<ul>
-						<li> 
-							Users liked that they could indicate important preferences in the signup page, and saw that this would help inform Kopa’s roommate matching algorithm. This was in line with our expectations and even surprised us that they wouldn’t prefer more questions asking about their preferences and living habits.
-						</li>
-					</ul>
-				<p>
-					<u> Task 2: Find 2 rentals within a price range of $500-2,500/month.</u> (Browse Rentals Page) 
-						<ul>
-							<li>
-								Despite our disclaimer that buttons are not fully built-out, users complained that they couldn’t fully use the ‘Price’ dropdown and ‘Sort’ buttons. This resulted in one of the users stating that they couldn’t complete the task assigned. Perhaps, we should have done a clearer job explaining what could be done or built out those specific functions in our prototype better.
-							</li>
-							<li>
-								No one used the expandible bookmarked box. We think that this was likely because the save listing functionality wasn’t built out, as our intention was that saving a listing would automatically add it to their bookmarked items and expand the box. 
-							</li>
-						</ul>
-				<p>
-					<u>Task 3: Find roommates that are quiet and like the outdoors.</u> (Find Roommates Page)
-					<ul>
-					<li>Feedback was overall positive; users thought it was easy to browse contact cards and complete their task of finding roommates with specific interests and habits. </li>
-					<li>One user noted that the writing was a bit small. This is a valid accessibility issue we would address if/when building out the actual website.</li>
-					</ul>
-				</p>
-				<h4>User Testing Summary & Potential Changes</h4>
-				<p>
-					Overall, the users thought our design was pretty intuitive to use and had a positive experience. They also liked its 2-in-1 function of browsing rentals and finding roommates. Some ​potential interface changes​​ we would make based on your UserTesting results and feedback include:
-					<ul>
-						<li>
-							Increasing text size in listings & roommate cards for better accessibility and readability
-						</li>
-						<li>
-							Reconsidering the format and placement of ‘Bookmarked’ box for increased visibility, perhaps closer to the listings column.
-						</li>
-					</ul>
-				</p>
-				<p>
-					Links to 3 User Testing Videos: 
-					<a href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User 1</a>,
-					<a href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User 2</a>,
-					<a href="https://app.usertesting.com/v/f2c2f60c-b0f7-4b32-9889-8a2b0b22c7be?encrypted_video_handle=d7e6c966-a219-48b3-8544-6c31e6b1947e#!/notes&shared_via=link ">User 3</a>
-				</p>
-				<h2>Project Summary</h2>
-				<p>
-					Overall, we really enjoyed having to work together to iteratively design a website around a startup idea. Since we all had summer internships in cities outside of Providence, we definetely resonated with the pain point Kopa's concept of combining short-term rentals with finding roommates addresses and hope the founders might find our designs helpful.
-				</p>
+				<h4>Find Roommates Page</h4>
+				<img class="sketches" src="./roommateannotated.png" />
+				<h4>Browse Rentals Page</h4>
+				<img class="sketches" src="./rentalannotated.png" />
 			</div>
+		</div>
+		<div class="content-grid" id="usertesting">
+			<h2>USER TESTING</h2>
+			<p>We gave users the following scenario, which we thought would encapsulate Kopa’s typical persona and user
+				motivation:
+			<ul>
+				<li> Imagine you are a college student who has an internship in NYC this upcoming summer. </li>
+				<li> You want to compare short-term rentals within your price range. </li>
+				<li> You also want to find quiet, outdoorsy roommates you can share your lease with. </li>
+			</ul>
+			We also made sure to let users know that this is not an actual website but an interactive mockup made on
+			prototyping software, so not all button functions are built out.
+			</p>
+			<h4>Video Walkthrough</h4>
+			<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/ImU7TDA-W74"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<h4>Tasks & Results</h4>
+			<p>
+				We gave users 3 tasks, which we thought would encapsulate the 3 key functionalities and screens of our
+				website. Each task was assessed according to the following 2 metrics, “Success” (Yes or No) and “Difficulty”
+				(Very difficult to Very easy, with a 5-point rating scale)
+			</p>
+			<p>
+				<u>Task 1: Sign up as a renter.</u> (Sign Up Page)
+			<ul>
+				<li>
+					Users liked that they could indicate important preferences in the signup page, and saw that this would help
+					inform Kopa’s roommate matching algorithm. This was in line with our expectations and even surprised us that
+					they wouldn’t prefer more questions asking about their preferences and living habits.
+				</li>
+			</ul>
+			<p>
+				<u> Task 2: Find 2 rentals within a price range of $500-2,500/month.</u> (Browse Rentals Page)
+			<ul>
+				<li>
+					Despite our disclaimer that buttons are not fully built-out, users complained that they couldn’t fully use
+					the ‘Price’ dropdown and ‘Sort’ buttons. This resulted in one of the users stating that they couldn’t
+					complete the task assigned. Perhaps, we should have done a clearer job explaining what could be done or
+					built out those specific functions in our prototype better.
+				</li>
+				<li>
+					No one used the expandible bookmarked box. We think that this was likely because the save listing
+					functionality wasn’t built out, as our intention was that saving a listing would automatically add it to
+					their bookmarked items and expand the box.
+				</li>
+			</ul>
+			<p>
+				<u>Task 3: Find roommates that are quiet and like the outdoors.</u> (Find Roommates Page)
+			<ul>
+				<li>Feedback was overall positive; users thought it was easy to browse contact cards and complete their task
+					of finding roommates with specific interests and habits. </li>
+				<li>One user noted that the writing was a bit small. This is a valid accessibility issue we would address
+					if/when building out the actual website.</li>
+			</ul>
+			</p>
+			<h4>User Testing Summary & Potential Changes</h4>
+			<p>
+				Overall, the users thought our design was pretty intuitive to use and had a positive experience. They also
+				liked its 2-in-1 function of browsing rentals and finding roommates. Some ​potential interface changes​​ we
+				would make based on your UserTesting results and feedback include:
+			<ul>
+				<li>
+					Increasing text size in listings & roommate cards for better accessibility and readability
+				</li>
+				<li>
+					Reconsidering the format and placement of ‘Bookmarked’ box for increased visibility, perhaps closer to the
+					listings column.
+				</li>
+			</ul>
+			</p>
+			<p>
+				Links to 3 User Testing Videos:
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User
+					1</a>,
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User
+					2</a>,
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/f2c2f60c-b0f7-4b32-9889-8a2b0b22c7be?encrypted_video_handle=d7e6c966-a219-48b3-8544-6c31e6b1947e#!/notes&shared_via=link ">User
+					3</a>
+			</p>
+		</div>
+		<div class="content-grid" id="summary" style="margin-bottom: 50px;">
+			<h2>Project Summary</h2>
+			<p>
+				Overall, we really enjoyed having to work together to iteratively design a website around a startup idea.
+				Since we all had summer internships in cities outside of Providence, we definitely resonated with the pain
+				point Kopa's concept of combining short-term rentals with finding roommates addresses and hope the founders
+				might find our designs helpful.
+			</p>
 		</div>
 	</div>
 </body>
