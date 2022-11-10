@@ -39,6 +39,7 @@ body {
 	font-family: "Inter", sans-serif;
 	font-size: 12pt;
 	margin: 0;
+	background-color: var(--background-light);
 }
 
 p {
@@ -150,4 +151,8 @@ a:visited {
 .changed {
 	margin-top: 6px;
 	margin-bottom: 0;
+}
+
+.sketches {
+	width: 100%;
 }
