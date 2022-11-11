@@ -31,6 +31,7 @@ h3,
 h4 {
 	font-weight: bold;
 	font-size: 12pt;
+	padding-top: 1em;
 }
 
 body {
@@ -92,7 +93,10 @@ li {
 	padding: 16px 25px 16px;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--boba-light-yellow);
+	border-style: dotted;
+	border-color: var(--dark-green);
+	border-radius: 0.5em;
+	/* background-color: var(--boba-light-yellow); */
 	width: 42.5%;
 }
 
@@ -106,12 +110,12 @@ li {
 .image {
 	max-width: 100%;
 	max-height: 100%;
+	padding-top: 0em;
 	padding-bottom: 0.6em;
 }
 
 /* project 1 specific */
 .project1 {
-	background-color: var(--boba-light);
 	color: var(--dark-green);
 }
 
@@ -120,7 +124,6 @@ li {
 	background: var(--dark-green);
 }
 .project1 .nav-bar {
-	background-color: var(--boba-light-yellow);
 	color: var(--dark-green);
 }
 
